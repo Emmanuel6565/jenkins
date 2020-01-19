@@ -8,6 +8,7 @@ public class EmmanuelApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EmmanuelApplication.class, args);
+		System.out.println("Hello Word");
 	}
 
 }
