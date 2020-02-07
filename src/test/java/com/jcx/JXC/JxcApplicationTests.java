@@ -1,10 +1,10 @@
-package fr.dlc.Emmanuel;
+package com.jcx.JXC;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EmmanuelApplicationTests {
+class JxcApplicationTests {
 
 	@Test
 	void contextLoads() {
