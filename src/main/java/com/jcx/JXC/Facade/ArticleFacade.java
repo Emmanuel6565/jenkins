@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 import com.jcx.JXC.Dto.*;
 import com.jcx.JXC.Entity.Article;
 
-@Service("ArticleFacade")
+@Service
 public class ArticleFacade {
     @Autowired
     private ArticleService articleService;

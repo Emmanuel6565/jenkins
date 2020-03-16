@@ -19,16 +19,37 @@ public class ArticleController {
     @Autowired
     private ArticleFacade articleFacade;
 
+    public ArticleController(ArticleFacade articleFacade) {
+        this.articleFacade = articleFacade;
+    }
+    @GetMapping(value = "/")
+        public String name() {
+            return "Hello, World";
+        }
+
     @GetMapping(value = "/article/{id}", produces = "application/json")
     public @ResponseBody ResponseEntity<ArticleDto> getArticleById(@PathVariable String id) {
         ArticleDto article = articleFacade.getArticleById(id);
-        return new ResponseEntity<ArticleDto>(article, HttpStatus.OK);
+        if(article != null){
+            return new ResponseEntity<ArticleDto>(article, HttpStatus.OK);
+        }
+        else{
+            ArticleDto dto = null;
+            return new ResponseEntity<ArticleDto>(dto , HttpStatus.NO_CONTENT);
+        }
     }
 
     @GetMapping(value="/article/")
     public @ResponseBody ResponseEntity<List<ArticleDto>> getAllArticle() {
         List<ArticleDto> articles = articleFacade.getAllArticles();
-        return new ResponseEntity<List<ArticleDto>>(articles, HttpStatus.OK);
+        if(articles != null) {
+            return new ResponseEntity<List<ArticleDto>>(articles, HttpStatus.OK);
+        }
+        else{
+            List<ArticleDto> dto = null;
+            return new ResponseEntity<List<ArticleDto>>(dto , HttpStatus.NO_CONTENT);
+        }
+
     }
     
     

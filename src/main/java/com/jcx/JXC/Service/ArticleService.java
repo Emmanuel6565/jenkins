@@ -8,7 +8,7 @@ import java.util.List;
 import com.jcx.JXC.Entity.Article;
 import com.jcx.JXC.Repositorie.*;
 
-@Service("ArticleService")
+@Service
 public class ArticleService {
     @Autowired
     private ArticleRepository articleRepo;
