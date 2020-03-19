@@ -14,6 +14,13 @@
 	<name>JXC</name>
 	<description>JXC Project</description>
 
+	<distributionManagement>
+		<snapshotRepository>
+			<id> Nexus </id>
+			<url> http://localhost:8081/repository/maven-snapshots/ </url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
