@@ -91,6 +91,6 @@
 				<serverId>Nexus</serverId>
 				<nexusUrl>http://localhost:8081/repository/maven-snapshots/</nexusUrl>
 			</configuration>
-    </plugin>
+    	</plugin>
 	</build>
 </project>
