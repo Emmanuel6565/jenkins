@@ -8,10 +8,10 @@
 		<version>2.2.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.Atos</groupId>
-	<artifactId>CI/CD</artifactId>
-	<version>CI/CI-0.0.1</version>
-	<name>CHAINE CI/CD</name>
+	<groupId>com.jcx</groupId>
+	<artifactId>JXC</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>JXC</name>
 	<description>JXC Project</description>
 
 	<distributionManagement>
