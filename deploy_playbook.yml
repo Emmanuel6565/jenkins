@@ -1,5 +1,6 @@
 ---
 - hosts: test.com
-  become: true
+  remote_user : root
+  become : yes
   roles: 
     - DEPLOY_ENV
