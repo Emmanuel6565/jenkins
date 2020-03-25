@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: Servers
   become: true
   roles: 
     - DEPLOY_ENV
