@@ -1,6 +1,6 @@
 ---
 # tasks file for DEPLOY_ENV
-
+# essai
 - include_vars: ../vars/main.yml
 
 - name: Pull image
