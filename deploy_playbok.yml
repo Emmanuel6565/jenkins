@@ -1,4 +1,0 @@
-___
-- hosts: localhost
-  roles: 
-    - DEPLOY_ENV

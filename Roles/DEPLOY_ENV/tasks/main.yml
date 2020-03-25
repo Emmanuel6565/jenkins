@@ -4,14 +4,14 @@
 - include_vars: ../vars/main.yml
 
 - name: Pull image
-    docker_image: 
-        name: "{{ container_image }}"
-        source: pull
+  docker_image:
+    name: "{{ container_image }}"
+    source: pull
     
 - name: Create Docker container
-    docker_container:
-        name: "{{ container_name }}"
-        image: "{{ container_image }}"
-        ports:
-            - "8090:{{ application_port}}"
+  docker_container:
+    name: "{{ container_name }}"
+    image: "{{ container_image }}"
+    ports:
+      - "8090:{{ application_port}}"
         
