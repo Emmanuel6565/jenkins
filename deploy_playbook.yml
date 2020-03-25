@@ -1,5 +1,5 @@
 ---
-- hosts: Servers
+- hosts: test.com
   become: true
   roles: 
     - DEPLOY_ENV
