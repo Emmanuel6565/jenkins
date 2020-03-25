@@ -1,6 +1,5 @@
 ---
 - hosts: Server
-  remote_user : root
-  become : yes
+  remote_user : macbookpro
   roles: 
     - DEPLOY_ENV
