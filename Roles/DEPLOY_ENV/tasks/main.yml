@@ -2,7 +2,6 @@
 # tasks file for DEPLOY_ENV
 # essai
 # essai
-- include_vars: ../vars/main.yml
 
 - name: Pull image
   docker_image:
