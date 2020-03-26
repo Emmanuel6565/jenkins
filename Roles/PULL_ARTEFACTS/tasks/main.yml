@@ -1,2 +1,13 @@
 ---
 # tasks file for PULL_ARTEFACTS
+
+- include_vars: ../vars/main.yml
+
+- name: Pull Artefacts
+  maven_artifact:
+    group_id: "{{ group_id }}"
+    artifact_id: "{{ artifact_id }}"
+    repository_url: "{{ nexus_url }}"
+    username: "{{ username }}"
+    password: "{{ password }}"
+    dest: /home
