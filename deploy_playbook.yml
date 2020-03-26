@@ -1,5 +1,11 @@
 ---
+<<<<<<< HEAD
 - hosts: localhost
   become: true
   roles: 
+=======
+- hosts: Server
+  remote_user : macbookpro
+  roles:
+>>>>>>> dev
     - DEPLOY_ENV
