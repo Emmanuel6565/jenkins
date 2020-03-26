@@ -5,7 +5,6 @@
   roles: 
 =======
 - hosts: Server
-  remote_user : macbookpro
   roles:
 >>>>>>> dev
     - DEPLOY_ENV
