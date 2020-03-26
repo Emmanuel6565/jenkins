@@ -2,7 +2,9 @@
 # tasks file for DEPLOY_ENV
 # essai
 # essai
-
+- vars_files:
+    ../vars/main.yml
+    
 - name: Pull image
   docker_image:
     name: "{{ container_image }}"
