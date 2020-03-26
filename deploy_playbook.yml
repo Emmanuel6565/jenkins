@@ -1,10 +1,5 @@
 ---
-<<<<<<< HEAD
-- hosts: localhost
-  become: true
-  roles: 
-=======
+
 - hosts: Server
   roles:
->>>>>>> dev
     - DEPLOY_ENV
