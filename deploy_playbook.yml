@@ -1,5 +1,6 @@
 ---
 
 - hosts: Server
+  remote_user: macbookpro
   roles:
     - ./Roles/DEPLOY_ENV
