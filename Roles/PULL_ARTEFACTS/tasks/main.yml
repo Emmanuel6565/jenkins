@@ -5,9 +5,10 @@
 
 - name: Pull Artefacts
   maven_artifact:
+    version: latest
     group_id: "{{ group_id }}"
     artifact_id: "{{ artifact_id }}"
     repository_url: "{{ nexus_url }}"
     username: "{{ username }}"
     password: "{{ password }}"
-    dest: /home
+    dest: /Users/macbookpro/Desktop/jenkins
