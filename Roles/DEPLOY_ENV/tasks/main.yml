@@ -18,5 +18,5 @@
       - /Users/macbookpro/Desktop/jenkins:/home
     ports:
       - "8090:{{ application_port}}"
-    state: running
+    state: present
         
