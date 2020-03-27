@@ -9,8 +9,7 @@
     build:
       dockerfile: present
       path: ./
-
-
+    state: present
     
 - name: Create Docker container
   docker_container:
