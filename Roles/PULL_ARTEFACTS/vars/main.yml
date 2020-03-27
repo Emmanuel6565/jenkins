@@ -1,9 +1,8 @@
 ---
 # vars file for PULL_ARTEFACTS
 
-vars:
-  nexus_url:
-  group_id: com.jcx
-  artifact_id: JXC
-  username: admin
-  password: Bonjour8
+nexus_url: http://localhost:8081/repository/maven-snapshots/
+group_id: com.jcx
+artifact_id: JXC
+username: admin
+password: Bonjour8
