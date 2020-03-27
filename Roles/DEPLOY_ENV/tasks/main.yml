@@ -6,8 +6,9 @@
 - name: Build image
   docker_image:
     name: "{{ container_image }}"
-    dockerfile: present
-    path: Docker_Image/DockerFile
+    build:
+      dockerfile: present
+      path: ./Docker_Image/
 
     
 - name: Create Docker container
