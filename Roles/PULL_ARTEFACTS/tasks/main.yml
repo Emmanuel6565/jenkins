@@ -1,8 +1,6 @@
 ---
 # tasks file for PULL_ARTEFACTS
 
-- include_vars: ../vars/main.yml
-
 - name: Pull Artefacts
   maven_artifact:
     version: latest
