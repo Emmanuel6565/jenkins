@@ -17,6 +17,6 @@
     volumes:
       - /Users/macbookpro/Desktop/jenkins:/home
     ports:
-      - "8090:{{ application_port}}"
+      - "8090:8090"
     state: started
         
