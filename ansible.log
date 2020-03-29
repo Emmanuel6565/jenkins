@@ -4673,3 +4673,19 @@ information.
 2020-03-30 00:17:25,090 p=3565 u=macbookpro n=ansible | changed: [deploy]
 2020-03-30 00:17:25,093 p=3565 u=macbookpro n=ansible | PLAY RECAP **********************************************************************************************
 2020-03-30 00:17:25,093 p=3565 u=macbookpro n=ansible | deploy                     : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-03-30 00:35:51,390 p=5389 u=macbookpro n=ansible | PLAY [Server] *******************************************************************************************
+2020-03-30 00:35:51,406 p=5389 u=macbookpro n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-03-30 00:35:52,354 p=5389 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-03-30 00:35:52,355 p=5389 u=macbookpro n=ansible | ok: [deploy]
+2020-03-30 00:35:52,361 p=5389 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Delete old files] ********************************************************
+2020-03-30 00:35:52,807 p=5389 u=macbookpro n=ansible | ok: [deploy]
+2020-03-30 00:35:52,814 p=5389 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Pull Artefacts] **********************************************************
+2020-03-30 00:35:53,581 p=5389 u=macbookpro n=ansible | ok: [deploy]
+2020-03-30 00:35:53,588 p=5389 u=macbookpro n=ansible | TASK [./Roles/DEPLOY_ENV : Create Docker container] *****************************************************
+2020-03-30 00:36:06,283 p=5389 u=macbookpro n=ansible | changed: [deploy]
+2020-03-30 00:36:06,286 p=5389 u=macbookpro n=ansible | PLAY RECAP **********************************************************************************************
+2020-03-30 00:36:06,286 p=5389 u=macbookpro n=ansible | deploy                     : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

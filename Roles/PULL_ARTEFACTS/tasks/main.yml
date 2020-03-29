@@ -3,7 +3,7 @@
 
 - name: Delete old files
   file:
-    path: /Users/macbookpro/Desktop/jenkins/Projet.jar
+    path: /Users/macbookpro/Desktop/jenkins/Project.jar
     state: absent
   
 - name: Pull Artefacts
