@@ -3,6 +3,7 @@
 
 - name: Pull Artefacts
   maven_artifact:
+    version: latest
     group_id: "{{ group_id }}"
     artifact_id: "{{ artifact_id }}"
     repository_url: "{{ nexus_url }}"

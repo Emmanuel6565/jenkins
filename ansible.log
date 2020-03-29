@@ -4575,3 +4575,17 @@ information.
 2020-03-29 23:27:01,569 p=34596 u=macbookpro n=ansible | changed: [deploy]
 2020-03-29 23:27:01,572 p=34596 u=macbookpro n=ansible | PLAY RECAP **********************************************************************************************
 2020-03-29 23:27:01,572 p=34596 u=macbookpro n=ansible | deploy                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-03-29 23:48:34,964 p=37117 u=macbookpro n=ansible | PLAY [Server] *******************************************************************************************
+2020-03-29 23:48:34,986 p=37117 u=macbookpro n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-03-29 23:48:36,317 p=37117 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-03-29 23:48:36,318 p=37117 u=macbookpro n=ansible | ok: [deploy]
+2020-03-29 23:48:36,326 p=37117 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Pull Artefacts] **********************************************************
+2020-03-29 23:48:37,151 p=37117 u=macbookpro n=ansible | ok: [deploy]
+2020-03-29 23:48:37,157 p=37117 u=macbookpro n=ansible | TASK [./Roles/DEPLOY_ENV : Create Docker container] *****************************************************
+2020-03-29 23:48:48,772 p=37117 u=macbookpro n=ansible | changed: [deploy]
+2020-03-29 23:48:48,775 p=37117 u=macbookpro n=ansible | PLAY RECAP **********************************************************************************************
+2020-03-29 23:48:48,775 p=37117 u=macbookpro n=ansible | deploy                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
