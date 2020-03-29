@@ -24,7 +24,7 @@ public class ArticleController {
     }
     @GetMapping(value = "/")
         public String name() {
-            return "Hello, World, et on rajoute une version";
+            return "Hello, World, haaaaaa";
         }
 
     @GetMapping(value = "/article/{id}", produces = "application/json")
