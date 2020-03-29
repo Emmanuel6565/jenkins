@@ -1,2 +1,7 @@
 ---
 # handlers file for DEPLOY_ENV
+
+- name: Run Project
+  docker_container:
+    name: "{{ container_name }}"
+    command: java -jar /home/*.jar

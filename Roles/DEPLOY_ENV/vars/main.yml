@@ -2,6 +2,6 @@
 # vars file for DEPLOY_ENV
 
 
-container_name: DEPLOY_ENV
-container_image: ubuntu
+container_name: deployenv
+container_image: nimmis/java-centos
 application_port: 8090

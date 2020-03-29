@@ -3,13 +3,10 @@
 # essai
 # essai
     
-- name: Build image
-  docker_image:
-    name: "{{ container_image }}"
-    build:
-      dockerfile: present
-      path: ./
-    state: present
+#- name: Build image
+ # docker_image:
+  #  name: "{{ container_image }}"
+   # path: .
     
 - name: Create Docker container
   docker_container:
@@ -17,7 +14,8 @@
     image: "{{ container_image }}"
     volumes:
       - /Users/macbookpro/Desktop/jenkins:/home
-    ports:
-      - "8090:8090"
+    published_ports:
+      - 0.0.0.0:8090:8090
+    command: sh /home/run.sh
     state: started
-        
+    
