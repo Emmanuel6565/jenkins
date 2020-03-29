@@ -2,7 +2,9 @@
 # tasks file for PULL_ARTEFACTS
 
 - name: Delete old files
-  command: sh rm /Users/macbookpro/Desktop/jenkins/*.jar
+  file:
+    path: /Users/macbookpro/Desktop/jenkins/Projet.jar
+    state: absent
   
 - name: Pull Artefacts
   maven_artifact:
