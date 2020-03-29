@@ -8,4 +8,4 @@
     repository_url: "{{ nexus_url }}"
     username: "{{ username }}"
     password: "{{ password }}"
-    dest: /Users/macbookpro/Desktop/jenkins
+    dest: /Users/macbookpro/Desktop/jenkins/Project.jar
