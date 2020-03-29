@@ -1,6 +1,9 @@
 ---
 # tasks file for PULL_ARTEFACTS
 
+- name: Delete old files
+  command: sh rm /Users/macbookpro/Desktop/jenkins/*.jar
+  
 - name: Pull Artefacts
   maven_artifact:
     group_id: "{{ group_id }}"
