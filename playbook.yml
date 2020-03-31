@@ -1,0 +1,8 @@
+---
+#playbook
+- hosts: all
+  become: yes
+  become_user: macbookpro
+  roles:
+    - ./Roles/PULL_ARTEFACTS
+    - ./Roles/DEPLOY_ENV
