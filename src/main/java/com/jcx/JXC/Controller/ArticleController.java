@@ -26,6 +26,11 @@ public class ArticleController {
         public String name() {
             return "Hello, World J'ai rajouté emmanuel";
         }
+    
+    @GetMapping(value = "/test")
+        public String test() {
+            return "haaaaaa ok";
+        }
 
     @GetMapping(value = "/article/{id}", produces = "application/json")
     public @ResponseBody ResponseEntity<ArticleDto> getArticleById(@PathVariable String id) {
