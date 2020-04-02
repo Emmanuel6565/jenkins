@@ -5,8 +5,14 @@
     
 #- name: Build image
  # docker_image:
-  #  name: "{{ container_image }}"
-   # path: .
+  #  build:
+   #   path: "./"
+    #  dockerfile: Dockerfile
+     # pull: false
+    #name: "test"
+    #tag: "CD"
+    #source: 'build'
+    #force_source: true
     
 - name: Create Docker container
   docker_container:

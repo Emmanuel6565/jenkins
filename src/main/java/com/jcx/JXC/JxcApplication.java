@@ -19,7 +19,8 @@ public class JxcApplication {
 		articleRepository.createArticle("three", "three", "content 3");
 		articleRepository.createArticle("four", "four", "content 4");
 		articleRepository.createArticle("five", "five", "content 5");
-		articleRepository.createArticle("six", "six", "content 6");		
+		articleRepository.createArticle("six", "six", "content 6");
+        articleRepository.createArticle("Test CI/CD", "TEST", "TEST CI/CD");
 	}
 
 }

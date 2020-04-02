@@ -1,7 +1,6 @@
 ---
 #playbook
 - hosts: Server
-  become: yes
   become_user: macbookpro
   roles:
     - ./Roles/PULL_ARTEFACTS
