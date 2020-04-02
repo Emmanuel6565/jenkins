@@ -4689,3 +4689,140 @@ information.
 2020-03-30 00:36:06,283 p=5389 u=macbookpro n=ansible | changed: [deploy]
 2020-03-30 00:36:06,286 p=5389 u=macbookpro n=ansible | PLAY RECAP **********************************************************************************************
 2020-03-30 00:36:06,286 p=5389 u=macbookpro n=ansible | deploy                     : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-04-01 11:14:58,015 p=82180 u=macbookpro n=ansible | PLAY [Server] ******************************************************************************************************
+2020-04-01 11:14:58,036 p=82180 u=macbookpro n=ansible | TASK [Gathering Facts] *********************************************************************************************
+2020-04-01 11:15:00,204 p=82180 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python, but future
+installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-04-01 11:15:00,204 p=82180 u=macbookpro n=ansible | ok: [deploy]
+2020-04-01 11:15:00,211 p=82180 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Delete old files] *******************************************************************
+2020-04-01 11:15:00,670 p=82180 u=macbookpro n=ansible | changed: [deploy]
+2020-04-01 11:15:00,678 p=82180 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Pull Artefacts] *********************************************************************
+2020-04-01 11:15:01,214 p=82180 u=macbookpro n=ansible |  [ERROR]: User interrupted execution
+
+2020-04-02 00:53:08,632 p=12081 u=macbookpro n=ansible | PLAY [Server] *******************************************************************************************
+2020-04-02 00:53:08,652 p=12081 u=macbookpro n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-02 00:53:10,219 p=12081 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-04-02 00:53:10,220 p=12081 u=macbookpro n=ansible | ok: [deploy]
+2020-04-02 00:53:10,229 p=12081 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Delete old files] ********************************************************
+2020-04-02 00:53:10,724 p=12081 u=macbookpro n=ansible | ok: [deploy]
+2020-04-02 00:53:10,732 p=12081 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Pull Artefacts] **********************************************************
+2020-04-02 00:53:12,104 p=12081 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 00:53:12,115 p=12081 u=macbookpro n=ansible | TASK [./Roles/DEPLOY_ENV : Build image] *****************************************************************
+2020-04-02 00:53:13,062 p=12081 u=macbookpro n=ansible | fatal: [deploy]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (docker_image) module: buil Supported parameters include: api_version, archive_path, build, buildargs, ca_cert, client_cert, client_key, container_limits, debug, docker_host, dockerfile, force, force_absent, force_source, force_tag, http_timeout, load_path, name, nocache, path, pull, push, repository, rm, source, ssl_version, state, tag, timeout, tls, tls_hostname, use_tls, validate_certs"}
+2020-04-02 00:53:13,064 p=12081 u=macbookpro n=ansible | PLAY RECAP **********************************************************************************************
+2020-04-02 00:53:13,064 p=12081 u=macbookpro n=ansible | deploy                     : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-02 00:53:28,850 p=12238 u=macbookpro n=ansible | PLAY [Server] *******************************************************************************************
+2020-04-02 00:53:28,867 p=12238 u=macbookpro n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-02 00:53:29,882 p=12238 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-04-02 00:53:29,883 p=12238 u=macbookpro n=ansible | ok: [deploy]
+2020-04-02 00:53:29,891 p=12238 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Delete old files] ********************************************************
+2020-04-02 00:53:30,364 p=12238 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 00:53:30,373 p=12238 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Pull Artefacts] **********************************************************
+2020-04-02 00:53:31,345 p=12238 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 00:53:31,354 p=12238 u=macbookpro n=ansible | TASK [./Roles/DEPLOY_ENV : Build image] *****************************************************************
+2020-04-02 00:56:16,215 p=12238 u=macbookpro n=ansible |  [ERROR]: User interrupted execution
+
+2020-04-02 01:01:16,694 p=12838 u=macbookpro n=ansible | PLAY [Server] *******************************************************************************************
+2020-04-02 01:01:16,718 p=12838 u=macbookpro n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-02 01:01:18,208 p=12838 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-04-02 01:01:18,208 p=12838 u=macbookpro n=ansible | ok: [deploy]
+2020-04-02 01:01:18,218 p=12838 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Delete old files] ********************************************************
+2020-04-02 01:01:18,715 p=12838 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 01:01:18,724 p=12838 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Pull Artefacts] **********************************************************
+2020-04-02 01:01:20,032 p=12838 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 01:01:20,046 p=12838 u=macbookpro n=ansible | TASK [./Roles/DEPLOY_ENV : Build image] *****************************************************************
+2020-04-02 01:01:20,613 p=12838 u=macbookpro n=ansible | fatal: [deploy -> localhost]: FAILED! => {"changed": false, "msg": "Failed to import the required Python library (Docker SDK for Python: docker (Python >= 2.7) or docker-py (Python 2.6)) on MacBook-Pro-de-Assamoi-217.local's Python /usr/local/opt/python/bin/python3.7. Please read module documentation and install in the appropriate location. If the required library is installed, but Ansible is using the wrong Python interpreter, please consult the documentation on ansible_python_interpreter, for example via `pip install docker` or `pip install docker-py` (Python 2.6). The error was: No module named 'requests'"}
+2020-04-02 01:01:20,614 p=12838 u=macbookpro n=ansible | PLAY RECAP **********************************************************************************************
+2020-04-02 01:01:20,615 p=12838 u=macbookpro n=ansible | deploy                     : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-02 01:02:23,264 p=13020 u=macbookpro n=ansible | PLAY [Server] *******************************************************************************************
+2020-04-02 01:02:23,282 p=13020 u=macbookpro n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-02 01:02:24,342 p=13020 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-04-02 01:02:24,343 p=13020 u=macbookpro n=ansible | ok: [deploy]
+2020-04-02 01:02:24,350 p=13020 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Delete old files] ********************************************************
+2020-04-02 01:02:24,884 p=13020 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 01:02:24,893 p=13020 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Pull Artefacts] **********************************************************
+2020-04-02 01:02:25,914 p=13020 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 01:02:25,925 p=13020 u=macbookpro n=ansible | TASK [./Roles/DEPLOY_ENV : Build image] *****************************************************************
+2020-04-02 01:02:26,315 p=13020 u=macbookpro n=ansible | fatal: [deploy -> localhost]: FAILED! => {"changed": false, "msg": "Failed to import the required Python library (Docker SDK for Python: docker (Python >= 2.7) or docker-py (Python 2.6)) on MacBook-Pro-de-Assamoi-217.local's Python /usr/local/opt/python/bin/python3.7. Please read module documentation and install in the appropriate location. If the required library is installed, but Ansible is using the wrong Python interpreter, please consult the documentation on ansible_python_interpreter, for example via `pip install docker` or `pip install docker-py` (Python 2.6). The error was: No module named 'requests'"}
+2020-04-02 01:02:26,316 p=13020 u=macbookpro n=ansible | PLAY RECAP **********************************************************************************************
+2020-04-02 01:02:26,316 p=13020 u=macbookpro n=ansible | deploy                     : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-02 01:03:00,310 p=13179 u=macbookpro n=ansible | PLAY [Server] *******************************************************************************************
+2020-04-02 01:03:00,325 p=13179 u=macbookpro n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-02 01:03:01,169 p=13179 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-04-02 01:03:01,169 p=13179 u=macbookpro n=ansible | ok: [deploy]
+2020-04-02 01:03:01,176 p=13179 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Delete old files] ********************************************************
+2020-04-02 01:03:01,665 p=13179 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 01:03:01,673 p=13179 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Pull Artefacts] **********************************************************
+2020-04-02 01:03:02,787 p=13179 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 01:03:02,795 p=13179 u=macbookpro n=ansible | TASK [./Roles/DEPLOY_ENV : Build image] *****************************************************************
+2020-04-02 01:03:08,409 p=13179 u=macbookpro n=ansible |  [ERROR]: User interrupted execution
+
+2020-04-02 01:04:35,021 p=13365 u=macbookpro n=ansible | PLAY [Server] *******************************************************************************************
+2020-04-02 01:04:35,041 p=13365 u=macbookpro n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-02 01:04:36,558 p=13365 u=macbookpro n=ansible | ok: [deploy]
+2020-04-02 01:04:36,565 p=13365 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Delete old files] ********************************************************
+2020-04-02 01:04:37,102 p=13365 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 01:04:37,110 p=13365 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Pull Artefacts] **********************************************************
+2020-04-02 01:04:38,064 p=13365 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 01:04:38,076 p=13365 u=macbookpro n=ansible | TASK [./Roles/DEPLOY_ENV : Build image] *****************************************************************
+2020-04-02 01:04:38,861 p=13365 u=macbookpro n=ansible | fatal: [deploy -> localhost]: FAILED! => {"changed": false, "msg": "Cannot have both the docker-py and docker python modules (old and new version of Docker SDK for Python) installed together as they use the same namespace and cause a corrupt installation. Please uninstall both packages, and re-install only the docker-py or docker python module (for MacBook-Pro-de-Assamoi-217.local's Python /usr/local/opt/python@3.8/bin/python3.8). It is recommended to install the docker module if no support for Python 2.6 is required. Please note that simply uninstalling one of the modules can leave the other module in a broken state."}
+2020-04-02 01:04:38,862 p=13365 u=macbookpro n=ansible | PLAY RECAP **********************************************************************************************
+2020-04-02 01:04:38,862 p=13365 u=macbookpro n=ansible | deploy                     : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-02 01:05:44,838 p=13544 u=macbookpro n=ansible | PLAY [Server] *******************************************************************************************
+2020-04-02 01:05:44,854 p=13544 u=macbookpro n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-02 01:05:45,866 p=13544 u=macbookpro n=ansible | ok: [deploy]
+2020-04-02 01:05:45,874 p=13544 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Delete old files] ********************************************************
+2020-04-02 01:05:46,406 p=13544 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 01:05:46,413 p=13544 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Pull Artefacts] **********************************************************
+2020-04-02 01:05:47,216 p=13544 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 01:05:47,226 p=13544 u=macbookpro n=ansible | TASK [./Roles/DEPLOY_ENV : Build image] *****************************************************************
+2020-04-02 01:05:47,838 p=13544 u=macbookpro n=ansible | fatal: [deploy -> localhost]: FAILED! => {"changed": false, "msg": "Cannot have both the docker-py and docker python modules (old and new version of Docker SDK for Python) installed together as they use the same namespace and cause a corrupt installation. Please uninstall both packages, and re-install only the docker-py or docker python module (for MacBook-Pro-de-Assamoi-217.local's Python /usr/local/opt/python@3.8/bin/python3.8). It is recommended to install the docker module if no support for Python 2.6 is required. Please note that simply uninstalling one of the modules can leave the other module in a broken state."}
+2020-04-02 01:05:47,839 p=13544 u=macbookpro n=ansible | PLAY RECAP **********************************************************************************************
+2020-04-02 01:05:47,839 p=13544 u=macbookpro n=ansible | deploy                     : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-02 01:07:31,227 p=13751 u=macbookpro n=ansible | PLAY [Server] *******************************************************************************************
+2020-04-02 01:07:31,248 p=13751 u=macbookpro n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-02 01:07:34,116 p=13751 u=macbookpro n=ansible | ok: [deploy]
+2020-04-02 01:07:34,125 p=13751 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Delete old files] ********************************************************
+2020-04-02 01:07:34,690 p=13751 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 01:07:34,698 p=13751 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Pull Artefacts] **********************************************************
+2020-04-02 01:07:35,441 p=13751 u=macbookpro n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ModuleNotFoundError: No module named 'lxml'
+2020-04-02 01:07:35,441 p=13751 u=macbookpro n=ansible | fatal: [deploy]: FAILED! => {"changed": false, "msg": "Failed to import the required Python library (lxml) on MacBook-Pro-de-Assamoi-217.local's Python /Applications/Xcode.app/Contents/Developer/usr/bin/python3. Please read module documentation and install in the appropriate location. If the required library is installed, but Ansible is using the wrong Python interpreter, please consult the documentation on ansible_python_interpreter"}
+2020-04-02 01:07:35,443 p=13751 u=macbookpro n=ansible | PLAY RECAP **********************************************************************************************
+2020-04-02 01:07:35,443 p=13751 u=macbookpro n=ansible | deploy                     : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-02 01:19:05,018 p=14326 u=macbookpro n=ansible | PLAY [Server] *******************************************************************************************
+2020-04-02 01:19:05,042 p=14326 u=macbookpro n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-02 01:19:06,416 p=14326 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-04-02 01:19:06,416 p=14326 u=macbookpro n=ansible | ok: [deploy]
+2020-04-02 01:19:06,423 p=14326 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Delete old files] ********************************************************
+2020-04-02 01:19:06,877 p=14326 u=macbookpro n=ansible | ok: [deploy]
+2020-04-02 01:19:06,885 p=14326 u=macbookpro n=ansible | TASK [./Roles/PULL_ARTEFACTS : Pull Artefacts] **********************************************************
+2020-04-02 01:19:08,170 p=14326 u=macbookpro n=ansible | changed: [deploy]
+2020-04-02 01:19:08,179 p=14326 u=macbookpro n=ansible | TASK [./Roles/DEPLOY_ENV : Build image] *****************************************************************
+2020-04-02 01:21:04,084 p=14326 u=macbookpro n=ansible |  [ERROR]: User interrupted execution
+
