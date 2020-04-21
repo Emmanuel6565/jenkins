@@ -122,6 +122,21 @@
                     </execution>
                 </executions>
             </plugin>
+            
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.2.0</version>
+                <configuration>
+                    <dockerDirectory>${project.basedir}</dockerDirectory>
+                    <imageName>${docker.image.prefix}/${project.name}</imageName>
+                    <imageTags>
+                        <imageTag>${project.version}</imageTag>
+                        <imageTag>latest</imageTag>
+                    </imageTags>
+                    <serverId>docker-hub</serverId>
+                </configuration>
+            </plugin>
 
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
