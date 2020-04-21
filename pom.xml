@@ -14,6 +14,7 @@
 	<name>JXC</name>
 	<description>JXC Project</description>
 
+    <!-- Nexus Server Repo -->
 	<distributionManagement>
 		<snapshotRepository>
 			<id> Nexus </id>
@@ -75,12 +76,14 @@
 			<scope>test</scope>
 		</dependency>
 	
+    <!-- Junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 		</dependency>
         
+    <!-- jacoco  -->
         <dependency>
             <groupId>org.jacoco</groupId>
             <artifactId>org.jacoco.agent</artifactId>
@@ -96,12 +99,15 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+            
+            <!-- checkstyle -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>2.17</version>
             </plugin>
             
+            <!-- Dependency Check -->
             <plugin>
               <groupId>org.owasp</groupId>
               <artifactId>dependency-check-maven</artifactId>
@@ -115,6 +121,7 @@
               </executions>
             </plugin>
             
+            <!-- jacoco plugin -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -136,6 +143,7 @@
                 </executions>
             </plugin>
             
+            <!-- Docker maven plugin -->
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
@@ -148,6 +156,7 @@
                 </configuration>
             </plugin>
             
+            <!-- surefire -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -160,6 +169,7 @@
                 </configuration>
             </plugin>
             
+            <!-- pitest -->
             <plugin>
                 <groupId>org.pitest</groupId>
                 <artifactId>pitest-maven</artifactId>
