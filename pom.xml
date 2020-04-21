@@ -109,17 +109,17 @@
             
             <!-- Dependency Check -->
             <plugin>
-              <groupId>org.owasp</groupId>
-              <artifactId>dependency-check-maven</artifactId>
-              <version>5.3.2</version>
-              <executions>
-                  <execution>
-                      <goals>
-                          <goal>check</goal>
-                      </goals>
-                  </execution>
-              </executions>
+                <groupId>org.owasp</groupId>
+                <artifactId>dependency-check-maven</artifactId>
+                <version>5.3.2</version>
+                <configuration>
+                    <format>ALL</format>
+                    <failBuildOnCVSS>5</failBuildOnCVSS>
+                </configuration>
             </plugin>
+            
+            <!-- jmeter plugin -->
+
             
             <!-- jacoco plugin -->
             <plugin>
@@ -148,6 +148,7 @@
                 <groupId>com.spotify</groupId>
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.4.8</version>
+                <forceTags>true</forceTags>
                 <configuration>
                     <repository>app-java</repository>
                 </configuration>
