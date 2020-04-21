@@ -3,8 +3,8 @@ FROM nimmis/java-centos:latest
 ARG lib_DIR=/opt/app-java/lib/
 ARG bin_DIR=/opt/app-java/bin
 ARG SNAPSHOT_DIR=target/
-ARG SNAPSHOT_NAME
-ARG CONT_PORT_PUBLISH
+ARG SNAPSHOT_NAME=JXC-0.0.1-SNAPSHOT.jar
+ARG CONT_PORT_PUBLISH=8090
 ARG CONT_VOLUME=/var/lib/app-java/config-app
 ARG ENTRYPOINT=/usr/bin/java
 
