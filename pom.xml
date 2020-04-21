@@ -129,7 +129,7 @@
                 <version>1.2.0</version>
                 <configuration>
                     <dockerDirectory>${project.basedir}</dockerDirectory>
-                    <imageName>java-app/${project.name}</imageName>
+                    <imageName>${docker.image.prefix}${project.name}</imageName>
                     <forceTags>true</forceTags>
                     <imageTags>
                         <imageTag>${project.version}</imageTag>
