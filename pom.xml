@@ -146,7 +146,6 @@
                     <forceTags>true</forceTags>
                     <imageTags>
                         <imageTag>${project.version}</imageTag>
-                        <imageTag>latest</imageTag>
                     </imageTags>
                     <serverId>docker-hub</serverId>
                 </configuration>
