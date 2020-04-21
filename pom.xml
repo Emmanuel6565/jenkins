@@ -145,7 +145,7 @@
                     <imageName>app-java</imageName>
                     <forceTags>true</forceTags>
                     <imageTags>
-                        <imageTag>0.0.1</imageTag>
+                        <imageTag>${project.version}</imageTag>
                     </imageTags>
                     <serverId>docker-hub</serverId>
                 </configuration>
