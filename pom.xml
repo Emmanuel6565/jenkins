@@ -103,6 +103,16 @@
             </plugin>
             
             <plugin>
+                <groupId>org.owasp</groupId>
+                <artifactId>dependency-check-maven</artifactId>
+                <version>${dependency-check.version}</version>
+                <configuration>
+                    <format>ALL</format>
+                    <failBuildOnCVSS>5</failBuildOnCVSS>
+                </configuration>
+            </plugin>
+            
+            <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.5</version>
