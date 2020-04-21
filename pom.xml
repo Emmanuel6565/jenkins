@@ -144,9 +144,6 @@
                     <dockerDirectory>.</dockerDirectory>
                     <imageName>app-java</imageName>
                     <forceTags>true</forceTags>
-                    <imageTags>
-                        <imageTag>${project.version}</imageTag>
-                    </imageTags>
                     <serverId>docker-hub</serverId>
                 </configuration>
             </plugin>
