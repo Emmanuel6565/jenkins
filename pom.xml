@@ -149,7 +149,7 @@
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.4.8</version>
                 <configuration>
-                    <repository>app-java/${project.artifactId}</repository>
+                    <repository>app-java</repository>
                 </configuration>
             </plugin>
             
