@@ -4,5 +4,6 @@
 nexus_url: http://localhost:8081/repository/maven-snapshots/
 group_id: com.jcx
 artifact_id: JXC
+version: latest
 username: admin
 password: Bonjour8

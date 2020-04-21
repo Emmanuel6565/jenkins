@@ -8,6 +8,7 @@
   
 - name: Pull Artefacts
   maven_artifact:
+    version: "{{ version }}"
     group_id: "{{ group_id }}"
     artifact_id: "{{ artifact_id }}"
     repository_url: "{{ nexus_url }}"
