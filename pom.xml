@@ -141,7 +141,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.2.0</version>
                 <configuration>
-                    <dockerDirectory>${project.basedir}</dockerDirectory>
+                    <dockerDirectory>.</dockerDirectory>
                     <imageName>app-java</imageName>
                     <forceTags>true</forceTags>
                     <imageTags>
