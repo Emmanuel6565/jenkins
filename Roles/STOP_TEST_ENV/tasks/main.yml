@@ -1,7 +1,7 @@
 ---
 # tasks file for STOP_TEST_ENV
 
-name: Stop test env
-docker_container:
+- name: Stop test env
+  docker_container:
     name: "{{ container_name }}"
     state: absent
