@@ -1,0 +1,4 @@
+---
+# vars file for STOP_TEST_ENV
+
+container_name: app-java-test
