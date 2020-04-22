@@ -1,7 +1,6 @@
 ---
 # vars file for DEPLOY_ENV
 
-
-container_name: deployenv
-container_image: nimmis/java-centos
+container_name: app-java-test
+container_image: app-java:latest
 application_port: 8090
