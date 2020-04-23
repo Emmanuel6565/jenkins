@@ -3,4 +3,4 @@
 
 container_name: app-java-prod
 container_image: app-java:latest
-application_port: 8090
+container_port: 8090

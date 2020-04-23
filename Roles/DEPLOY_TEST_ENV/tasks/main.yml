@@ -7,6 +7,7 @@
     image: "{{ container_image }}"
     published_ports:
       - 0.0.0.0:8090:8090
+    commande: sleep infinity
     state: started
     recreate: yes
 
