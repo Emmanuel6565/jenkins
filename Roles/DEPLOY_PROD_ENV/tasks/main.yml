@@ -1,0 +1,14 @@
+---
+# tasks file for RUN_PROJECT
+
+- name: Prod
+docker_container:
+  name: "{{ container_name }}"
+  image: "{{ container_image }}"
+  published_ports:
+    - 0.0.0.0:"{{ container_port }}":"{{ container_port }}"
+  state: started
+  recreate: yes
+
+
+  

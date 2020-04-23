@@ -1,0 +1,6 @@
+---
+# vars file for RUN_PROJECT
+
+container_name: app-java-prod
+container_image: app-java:latest
+application_port: 8090

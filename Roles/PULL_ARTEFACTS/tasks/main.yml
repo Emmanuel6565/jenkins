@@ -14,4 +14,4 @@
     repository_url: "{{ nexus_url }}"
     username: "{{ username }}"
     password: "{{ password }}"
-    dest: /Users/macbookpro/Desktop/jenkins/Project.jar
+    dest: "{{ dest_file }}"

@@ -1,4 +1,0 @@
----
-# vars file for RUN_PROJECT
-
-container_name: deployenv

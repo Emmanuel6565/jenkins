@@ -1,0 +1,12 @@
+---
+# tasks file for BUILD_DOCKER_IMAGE
+
+- name: build docker image from docker file
+docker_image:
+  build:
+    name: "{{ image_name }}"
+    dockerfile: present
+    rm: yes
+    path: "{{ dockerfile_path }}"
+  tag: "{{ tag }}"
+  source: build

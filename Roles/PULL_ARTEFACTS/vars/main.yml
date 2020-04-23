@@ -5,5 +5,6 @@ nexus_url: http://localhost:8081/repository/maven-snapshots/
 group_id: com.jcx
 artifact_id: JXC
 version: latest
+dest_file: /Users/macbookpro/Desktop/jenkins/
 username: admin
 password: Bonjour8

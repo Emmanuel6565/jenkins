@@ -1,0 +1,7 @@
+---
+#playbook for pulling artefacts
+- hosts: all
+  become_user: macbookpro
+  roles:
+    - ./Roles/PULL_ARTEFACTS
+
