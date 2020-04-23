@@ -2,7 +2,8 @@
 # tasks file for BUILD_DOCKER_IMAGE
 
 - name: set directory
-  command: chdir=/Users/macbookpro/jenkins
+  args:
+    chdir: /Users/macbookpro/jenkins
 
 - name: build docker image from docker file
   docker_image:
