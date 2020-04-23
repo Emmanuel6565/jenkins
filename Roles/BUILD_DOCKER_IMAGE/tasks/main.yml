@@ -11,4 +11,3 @@
     name: "{{ image_name }}"
     tag: "{{ tag }}"
     source: 'build'
-  delegate_to: localhost
