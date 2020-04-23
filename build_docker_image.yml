@@ -1,7 +1,0 @@
----
-#playbook for stopping test env
-- hosts: all
-  become_user: macbookpro
-  roles:
-    - ./Roles/BUILD_DOCKER_IMAGE
-

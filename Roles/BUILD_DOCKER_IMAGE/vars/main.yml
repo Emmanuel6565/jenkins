@@ -2,5 +2,8 @@
 # vars file for BUILD_DOCKER_IMAGE
 
 image_name: app-java
-dockerfile_path: "/Users/macbookpro/Desktop/jenkins/"
+dockerfile_name: "Dockerfile"
+dockerfile_path: "/Users/macbookpro/Desktop/jenkins"
+Dockerfile_template_dest: "/Users/macbookpro/Desktop/jenkins/Dockerfile"
+Entrypoint_template_dest: "/Users/macbookpro/Desktop/jenkins/entrypoint.sh"
 tag: latest

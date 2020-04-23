@@ -3,4 +3,5 @@
 - hosts: all
   become_user: macbookpro
   roles:
-    - ./Roles/DEPLOY_PROD_ENV
+    - ../Roles/PULL_ARTEFACTS
+

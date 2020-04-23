@@ -5325,3 +5325,110 @@ information.
 2020-04-23 15:11:31,758 p=7903 u=macbookpro n=ansible | fatal: [deploy -> localhost]: FAILED! => {"changed": false, "msg": "Failed to import the required Python library (Docker SDK for Python: docker (Python >= 2.7) or docker-py (Python 2.6)) on MacBook-Pro-de-Assamoi-217.local's Python /usr/local/opt/python/bin/python3.7. Please read module documentation and install in the appropriate location. If the required library is installed, but Ansible is using the wrong Python interpreter, please consult the documentation on ansible_python_interpreter, for example via `pip install docker` or `pip install docker-py` (Python 2.6). The error was: No module named 'requests'"}
 2020-04-23 15:11:31,759 p=7903 u=macbookpro n=ansible | PLAY RECAP **********************************************************************************************
 2020-04-23 15:11:31,760 p=7903 u=macbookpro n=ansible | deploy                     : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-24 00:56:36,765 p=16900 u=macbookpro n=ansible | PLAY [all] *************************************************************************************************
+2020-04-24 00:56:36,783 p=16900 u=macbookpro n=ansible | TASK [Gathering Facts] *************************************************************************************
+2020-04-24 00:56:38,241 p=16900 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-04-24 00:56:38,242 p=16900 u=macbookpro n=ansible | ok: [deploy]
+2020-04-24 00:56:38,251 p=16900 u=macbookpro n=ansible | TASK [./Roles/BUILD_DOCKER_IMAGE : Copy dockerfile] ********************************************************
+2020-04-24 00:56:38,376 p=16900 u=macbookpro n=ansible | fatal: [deploy]: FAILED! => {"changed": false, "msg": "Could not find or access 'template/Dockerfile.j2'\nSearched in:\n\t/Users/macbookpro/Desktop/ESIR/DLC/Git/dlc/Roles/BUILD_DOCKER_IMAGE/templates/template/Dockerfile.j2\n\t/Users/macbookpro/Desktop/ESIR/DLC/Git/dlc/Roles/BUILD_DOCKER_IMAGE/template/Dockerfile.j2\n\t/Users/macbookpro/Desktop/ESIR/DLC/Git/dlc/Roles/BUILD_DOCKER_IMAGE/tasks/templates/template/Dockerfile.j2\n\t/Users/macbookpro/Desktop/ESIR/DLC/Git/dlc/Roles/BUILD_DOCKER_IMAGE/tasks/template/Dockerfile.j2\n\t/Users/macbookpro/Desktop/ESIR/DLC/Git/dlc/templates/template/Dockerfile.j2\n\t/Users/macbookpro/Desktop/ESIR/DLC/Git/dlc/template/Dockerfile.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2020-04-24 00:56:38,377 p=16900 u=macbookpro n=ansible | PLAY RECAP *************************************************************************************************
+2020-04-24 00:56:38,377 p=16900 u=macbookpro n=ansible | deploy                     : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-24 00:57:26,672 p=16989 u=macbookpro n=ansible | PLAY [all] *************************************************************************************************
+2020-04-24 00:57:26,689 p=16989 u=macbookpro n=ansible | TASK [Gathering Facts] *************************************************************************************
+2020-04-24 00:57:27,591 p=16989 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-04-24 00:57:27,591 p=16989 u=macbookpro n=ansible | ok: [deploy]
+2020-04-24 00:57:27,599 p=16989 u=macbookpro n=ansible | TASK [./Roles/BUILD_DOCKER_IMAGE : Copy dockerfile] ********************************************************
+2020-04-24 00:57:28,438 p=16989 u=macbookpro n=ansible | changed: [deploy]
+2020-04-24 00:57:28,449 p=16989 u=macbookpro n=ansible | TASK [./Roles/BUILD_DOCKER_IMAGE : build docker image from docker file] ************************************
+2020-04-24 00:57:29,783 p=16989 u=macbookpro n=ansible | ok: [deploy -> 172.20.10.2]
+2020-04-24 00:57:29,786 p=16989 u=macbookpro n=ansible | PLAY RECAP *************************************************************************************************
+2020-04-24 00:57:29,786 p=16989 u=macbookpro n=ansible | deploy                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-04-24 00:58:24,221 p=17141 u=macbookpro n=ansible | PLAY [all] *************************************************************************************************
+2020-04-24 00:58:24,239 p=17141 u=macbookpro n=ansible | TASK [Gathering Facts] *************************************************************************************
+2020-04-24 00:58:25,192 p=17141 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-04-24 00:58:25,192 p=17141 u=macbookpro n=ansible | ok: [deploy]
+2020-04-24 00:58:25,201 p=17141 u=macbookpro n=ansible | TASK [./Roles/BUILD_DOCKER_IMAGE : Copy dockerfile] ********************************************************
+2020-04-24 00:58:26,049 p=17141 u=macbookpro n=ansible | fatal: [deploy]: FAILED! => {"changed": false, "checksum": "8a173cda93dbc36f390c89ea18c539b9375512be", "msg": "Destination directory \"/Users/macbookpro/Desktop/jenkins does not exist"}
+2020-04-24 00:58:26,051 p=17141 u=macbookpro n=ansible | PLAY RECAP *************************************************************************************************
+2020-04-24 00:58:26,051 p=17141 u=macbookpro n=ansible | deploy                     : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-24 00:59:57,799 p=17291 u=macbookpro n=ansible | PLAY [all] *************************************************************************************************
+2020-04-24 00:59:57,820 p=17291 u=macbookpro n=ansible | TASK [Gathering Facts] *************************************************************************************
+2020-04-24 00:59:59,123 p=17291 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-04-24 00:59:59,124 p=17291 u=macbookpro n=ansible | ok: [deploy]
+2020-04-24 00:59:59,135 p=17291 u=macbookpro n=ansible | TASK [./Roles/BUILD_DOCKER_IMAGE : Copy dockerfile] ********************************************************
+2020-04-24 00:59:59,988 p=17291 u=macbookpro n=ansible | fatal: [deploy]: FAILED! => {"changed": false, "checksum": "8a173cda93dbc36f390c89ea18c539b9375512be", "msg": "Destination directory \"/Users/macbookpro/Desktop/jenkins\" does not exist"}
+2020-04-24 00:59:59,990 p=17291 u=macbookpro n=ansible | PLAY RECAP *************************************************************************************************
+2020-04-24 00:59:59,990 p=17291 u=macbookpro n=ansible | deploy                     : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-24 01:00:32,478 p=17411 u=macbookpro n=ansible | PLAY [all] *************************************************************************************************
+2020-04-24 01:00:32,499 p=17411 u=macbookpro n=ansible | TASK [Gathering Facts] *************************************************************************************
+2020-04-24 01:00:33,334 p=17411 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-04-24 01:00:33,334 p=17411 u=macbookpro n=ansible | ok: [deploy]
+2020-04-24 01:00:33,341 p=17411 u=macbookpro n=ansible | TASK [./Roles/BUILD_DOCKER_IMAGE : Copy dockerfile] ********************************************************
+2020-04-24 01:00:34,376 p=17411 u=macbookpro n=ansible | ok: [deploy]
+2020-04-24 01:00:34,385 p=17411 u=macbookpro n=ansible | TASK [./Roles/BUILD_DOCKER_IMAGE : build docker image from docker file] ************************************
+2020-04-24 01:00:35,630 p=17411 u=macbookpro n=ansible | ok: [deploy -> 172.20.10.2]
+2020-04-24 01:00:35,633 p=17411 u=macbookpro n=ansible | PLAY RECAP *************************************************************************************************
+2020-04-24 01:00:35,633 p=17411 u=macbookpro n=ansible | deploy                     : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-04-24 01:01:58,851 p=17579 u=macbookpro n=ansible | PLAY [all] *************************************************************************************************
+2020-04-24 01:01:58,871 p=17579 u=macbookpro n=ansible | TASK [Gathering Facts] *************************************************************************************
+2020-04-24 01:02:00,167 p=17579 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-04-24 01:02:00,167 p=17579 u=macbookpro n=ansible | ok: [deploy]
+2020-04-24 01:02:00,176 p=17579 u=macbookpro n=ansible | TASK [./Roles/BUILD_DOCKER_IMAGE : Copy dockerfile] ********************************************************
+2020-04-24 01:02:01,018 p=17579 u=macbookpro n=ansible | fatal: [deploy]: FAILED! => {"changed": false, "checksum": "8a173cda93dbc36f390c89ea18c539b9375512be", "msg": "Destination directory \"/Users/macbookpro/Desktop/jenkins\" does not exist"}
+2020-04-24 01:02:01,019 p=17579 u=macbookpro n=ansible | PLAY RECAP *************************************************************************************************
+2020-04-24 01:02:01,020 p=17579 u=macbookpro n=ansible | deploy                     : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-24 01:03:00,048 p=17702 u=macbookpro n=ansible | PLAY [all] *************************************************************************************************
+2020-04-24 01:03:00,059 p=17702 u=macbookpro n=ansible | TASK [Gathering Facts] *************************************************************************************
+2020-04-24 01:03:00,917 p=17702 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-04-24 01:03:00,917 p=17702 u=macbookpro n=ansible | ok: [deploy]
+2020-04-24 01:03:00,926 p=17702 u=macbookpro n=ansible | TASK [./Roles/BUILD_DOCKER_IMAGE : Copy dockerfile] ********************************************************
+2020-04-24 01:03:01,779 p=17702 u=macbookpro n=ansible | changed: [deploy]
+2020-04-24 01:03:01,788 p=17702 u=macbookpro n=ansible | TASK [./Roles/BUILD_DOCKER_IMAGE : build docker image from docker file] ************************************
+2020-04-24 01:03:03,036 p=17702 u=macbookpro n=ansible | ok: [deploy -> 172.20.10.2]
+2020-04-24 01:03:03,038 p=17702 u=macbookpro n=ansible | PLAY RECAP *************************************************************************************************
+2020-04-24 01:03:03,038 p=17702 u=macbookpro n=ansible | deploy                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-04-24 01:04:12,732 p=17863 u=macbookpro n=ansible | PLAY [all] *************************************************************************************************
+2020-04-24 01:04:12,753 p=17863 u=macbookpro n=ansible | TASK [Gathering Facts] *************************************************************************************
+2020-04-24 01:04:14,126 p=17863 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-04-24 01:04:14,126 p=17863 u=macbookpro n=ansible | ok: [deploy]
+2020-04-24 01:04:14,136 p=17863 u=macbookpro n=ansible | TASK [./Roles/BUILD_DOCKER_IMAGE : Copy dockerfile] ********************************************************
+2020-04-24 01:04:14,257 p=17863 u=macbookpro n=ansible | fatal: [deploy]: FAILED! => {"changed": false, "msg": "dest is required"}
+2020-04-24 01:04:14,258 p=17863 u=macbookpro n=ansible | PLAY RECAP *************************************************************************************************
+2020-04-24 01:04:14,258 p=17863 u=macbookpro n=ansible | deploy                     : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-24 01:04:45,211 p=17953 u=macbookpro n=ansible | PLAY [all] *************************************************************************************************
+2020-04-24 01:04:45,222 p=17953 u=macbookpro n=ansible | TASK [Gathering Facts] *************************************************************************************
+2020-04-24 01:04:45,973 p=17953 u=macbookpro n=ansible | [WARNING]: Platform darwin on host deploy is using the discovered Python interpreter at /usr/bin/python,
+but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-04-24 01:04:45,973 p=17953 u=macbookpro n=ansible | ok: [deploy]
+2020-04-24 01:04:45,980 p=17953 u=macbookpro n=ansible | TASK [./Roles/BUILD_DOCKER_IMAGE : Copy dockerfile] ********************************************************
+2020-04-24 01:04:46,837 p=17953 u=macbookpro n=ansible | ok: [deploy]
+2020-04-24 01:04:46,847 p=17953 u=macbookpro n=ansible | TASK [./Roles/BUILD_DOCKER_IMAGE : build docker image from docker file] ************************************
+2020-04-24 01:04:48,100 p=17953 u=macbookpro n=ansible | ok: [deploy -> 172.20.10.2]
+2020-04-24 01:04:48,103 p=17953 u=macbookpro n=ansible | PLAY RECAP *************************************************************************************************
+2020-04-24 01:04:48,104 p=17953 u=macbookpro n=ansible | deploy                     : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

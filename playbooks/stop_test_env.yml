@@ -3,4 +3,4 @@
 - hosts: all
   become_user: macbookpro
   roles:
-    - ./Roles/STOP_TEST_ENV
+    - ../Roles/STOP_TEST_ENV
