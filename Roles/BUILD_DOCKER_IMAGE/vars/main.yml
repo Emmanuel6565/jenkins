@@ -2,5 +2,5 @@
 # vars file for BUILD_DOCKER_IMAGE
 
 image_name: app-java
-dockerfile_path: "."
+dockerfile_path: "/Users/macbookpro/Desktop/jenkins/"
 tag: latest
