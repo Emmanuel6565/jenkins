@@ -4,15 +4,16 @@ MAINTAINER maintainer_name "emmanuelassamoi65@gmail.com"
 RUN addgroup -S app-java && adduser -S app-java -G app-java
 USER app-java
 
-ARG JAR_FILE=JXC-0.0.1-SNAPSHOT.jar
-ARG PROJECT_HOME=/Users/macbookpro/.jenkins/workspace/ChaineCICD
+ARG JAR_FILE=Project.jar
 ARG CONT_PORT_PUBLISH=8090
 ARG CONT_VOLUME=/var/lib/app-java/config-app
 
-COPY ${PROJECT_HOME}/${JAR_FILE} /opt/app-java/lib/app.jar
-COPY ${PROJECT_HOME}/entrypoint.sh /opt/app-java/lib/
+COPY ${JAR_FILE} /opt/app-java/lib/app.jar
 VOLUME ${CONT_VOLUME}
 EXPOSE ${CONT_PORT_PUBLISH}
-ENTRYPOINT ["/bin/sh"]
-CMD ["/opt/app-java/lib/entrypoint.sh"]
+ENTRYPOINT ["/usr/bin/java"]
+CMD ["-jar", "/opt/app-java/lib/app.jar"]
+
+#COPY /Users/macbookpro/.jenkins/workspace/ChaineCICD/entrypoint.sh /opt/app-java/lib/
+#CMD ["/opt/app-java/lib/entrypoint.sh"]
 
