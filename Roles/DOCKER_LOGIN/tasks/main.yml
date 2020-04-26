@@ -1,0 +1,9 @@
+---
+# tasks file for DOCKER_LOGIN
+
+- name: Docker login in registry
+  docker_login:
+    registry: "{{ registry }}:{{ registry_port }}"
+    username: "{{ username }}"
+    password: "{{ password }}"
+    reauthorize: yes

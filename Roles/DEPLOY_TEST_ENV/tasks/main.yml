@@ -4,7 +4,7 @@
 - name: Create Docker container for test
   docker_container:
     name: "{{ container_name }}"
-    image: "{{ container_image }}"
+    image: "{{ registry }}:{{ registry_port }}/{{ container_image }}"
     published_ports:
       - "0.0.0.0:8090:{{ application_port }}"
     detach: yes

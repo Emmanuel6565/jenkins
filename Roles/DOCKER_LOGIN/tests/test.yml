@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - BUILD_DOCKER_IMAGE
+    - DOCKER_LOGIN

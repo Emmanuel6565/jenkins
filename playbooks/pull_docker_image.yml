@@ -3,5 +3,5 @@
 - hosts: all
   become_user: macbookpro
   roles:
-    - ../Roles/PULL_ARTEFACTS
+    - ../Roles/PULL_DOCKER_IMAGE
 

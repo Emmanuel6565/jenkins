@@ -2,5 +2,8 @@
 # vars file for DEPLOY_ENV
 
 container_name: app-java-test
-container_image: app-java:latest
+registry: 172.20.10.2
+registry_port: 8083
+container_image: app-java
+image_tag: latest
 application_port: 8090

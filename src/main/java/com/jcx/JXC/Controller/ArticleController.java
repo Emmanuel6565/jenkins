@@ -29,7 +29,7 @@ public class ArticleController {
     
     @GetMapping(value = "/yves")
         public String test() {
-            return "haaaaaa ok salut yves, nouvelle feature";
+            return "haaaaaa ok salut yves, nouvelle feature pour la chaine, pour docker";
         }
 
     @GetMapping(value = "/article/{id}", produces = "application/json")

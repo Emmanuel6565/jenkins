@@ -1,0 +1,7 @@
+---
+# vars file for PULL_DOCKER_IMAGE
+
+registry: 172.20.10.2
+registry_port: 8083
+image_name: app-java
+version: latest

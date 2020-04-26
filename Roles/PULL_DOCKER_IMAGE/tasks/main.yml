@@ -1,0 +1,8 @@
+---
+# tasks file for PULL_DOCKER_IMAGE
+
+- name: pull Docker image from nexus
+  docker_image:
+    name: "{{ registry}}:{{ registry_port }}/{{ image_name }}"
+    tag: "{{ version }}"
+    source: pull
