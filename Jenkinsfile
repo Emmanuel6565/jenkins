@@ -1,4 +1,4 @@
-// send notification via mail
+// send notification via mail or slack
 
 /*def notity(String StageName, String Status){
     emailext(
