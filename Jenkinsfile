@@ -1,13 +1,13 @@
 // send notification via mail
 
-def notity(String StageName, String Status){
+/*def notity(String StageName, String Status){
     emailext(
         subject: "STARTED: Job '${env.BRANCH_NAME} ${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
     body: """<p>STATUS: Status Job '{env.BRANCH_NAME} ${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p> <p>check log at <a href=${env.BUILD_URL}>${env.JOB_NAME}</a></p>"""
     recipientProviders: [[$class: 'DevelopersRecipientProvider']]
           
     )
-}
+}*/
 
 // set env variables
 
