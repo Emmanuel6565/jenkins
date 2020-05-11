@@ -15,11 +15,17 @@ pipeline {
    agent any
    
     stages {
+        stage('Git Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        /*
         stage('Git Clone') {
             steps {
                 git branch: 'env.BRANCH_NAME', credentialsId: 'f6fb2c09-43ba-4a49-b535-4a8cfd2e3757', url: 'https://github.com/Emmanuel6565/jenkins.git'
             }
-        }
+        }*/
         
         stage('Compile') {
             steps {
