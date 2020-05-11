@@ -24,19 +24,13 @@ public class ArticleController {
     }
     @GetMapping(value = "/")
         public String name() {
-            return "Hello, World J'ai rajouté emmanuel";
+            return "Hello, World";
+        }
+    @GetMapping(value = "/")
+        public String feature() {
+            return "feature 001";
         }
     
-    @GetMapping(value = "/feature001")
-        public String test() {
-            return "feature 001 a été ajouté";
-        }
-    
-    @GetMapping(value = "/yves")
-        public String test() {
-            return "haaaaaa ok salut yves, nouvelle feature pour la chaine, pour docker";
-        }
-
     @GetMapping(value = "/article/{id}", produces = "application/json")
     public @ResponseBody ResponseEntity<ArticleDto> getArticleById(@PathVariable String id) {
         ArticleDto article = articleFacade.getArticleById(id);
