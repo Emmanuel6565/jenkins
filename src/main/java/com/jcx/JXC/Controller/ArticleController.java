@@ -28,7 +28,7 @@ public class ArticleController {
         }
     
     @GetMapping(value = "/feature001")
-        public String test() {
+        public String feature001() {
             return "feature 001 a été ajouté";
         }
     
