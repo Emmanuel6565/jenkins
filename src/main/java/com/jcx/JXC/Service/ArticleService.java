@@ -16,6 +16,10 @@ public class ArticleService {
     public Article getArticleById(String id){
         return articleRepo.getArticleById(id);
     }
+    
+    /**
+     Function not implement yet
+     */
     public void getArticleByTitle(String title) {
 
     }

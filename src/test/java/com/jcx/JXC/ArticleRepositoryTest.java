@@ -34,7 +34,7 @@ public class ArticleRepositoryTest {
         articles.add(article);
         articles.add(article2);
         when(articleRepository.findAll()).thenReturn(articles);
-        assertEquals(articleRepository.findAll().size(),2);
+        assertEquals(2, articleRepository.findAll().size());
 
         //unit test 
         //unit test
@@ -43,7 +43,7 @@ public class ArticleRepositoryTest {
         articles.add(article3);
         when(articleRepository.findAll()).thenReturn(articles);
         //verify(articleRepository).findAll();
-        assertEquals(articleRepository.findAll().size(), 3);
+        assertEquals(3, articleRepository.findAll().size());
     }
     
     @Test

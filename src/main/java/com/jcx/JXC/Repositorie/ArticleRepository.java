@@ -35,7 +35,7 @@ public class ArticleRepository {
      * offset: the number of elements to skip in the beginning of the list
      * limit: the number of elements to take
      */
-    public List<Article> findAll(int offset, int limit) {
+    public List<Article> findAll() {
         return this.articles;
     }
 
