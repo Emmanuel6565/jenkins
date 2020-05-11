@@ -33,7 +33,7 @@ public class ArticleController {
     
     @GetMapping(value = "/essaifeature")
         public String essaifeature() {
-            return "feature 001 a été rajouté par emmanuel";
+            return "feature 001 a été rajouté par emmanuel, feature ok";
         }
     
     @GetMapping(value = "/article/{id}", produces = "application/json")
