@@ -28,7 +28,7 @@ public class ArticleController {
         }
     @GetMapping(value = "/feature")
         public String feature() {
-            return "feature 001";
+            return "feature 001 a été rajouté";
         }
     
     @GetMapping(value = "/article/{id}", produces = "application/json")
