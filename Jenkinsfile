@@ -27,6 +27,7 @@ pipeline {
             }
         }*/
         
+        // stage for feature branch (Tests)
         stage('Compile') {
             steps {
                 echo "-=- compiling project -=-"
@@ -57,14 +58,14 @@ pipeline {
             }
         }
         
-        /*
+        
         stage('Code inspection & quality gate') {
             steps {
                 echo "-=- run code inspection & check quality gate -=-"
                 withSonarQubeEnv('Sonarqube') {
                     sh "./mvnw sonar:sonar"
                 }
-                timeout(time: 1, unit: 'MINUTES') {
+                timeout(time: 10, unit: 'MINUTES') {
                     //waitForQualityGate abortPipeline: true
                     script {
                         def qg = waitForQualityGate()
@@ -75,7 +76,7 @@ pipeline {
                 }
             }
         }
-        **/
+        
        
         stage('Build && push Docker Image to Nexus') {
             steps {
@@ -87,7 +88,9 @@ pipeline {
             steps {
                 //ansible job test
                 echo "-=- Ansible job for test env"
-                ansibleTower async: false, credential: '', extraVars: '', importTowerLogs: false, importWorkflowChildLogs: false, inventory: '', jobTags: '', jobTemplate: 'Production', jobType: 'run', limit: '', removeColor: false, skipJobTags: '', templateType: 'workflow', throwExceptionWhenFail: false, towerCredentialsId: 'ansible', towerServer: 'ansible', verbose: false            }
+                ansibleTower async: false, credential: '', extraVars: '', importTowerLogs: false, importWorkflowChildLogs: false, inventory: '', jobTags: '', jobTemplate: 'Production', jobType: 'run', limit: '', removeColor: false, skipJobTags: '', templateType: 'workflow', throwExceptionWhenFail: false, towerCredentialsId: 'ansible', towerServer: 'ansible', verbose: false
+        
+            }
         }
         
         // Integration tests
