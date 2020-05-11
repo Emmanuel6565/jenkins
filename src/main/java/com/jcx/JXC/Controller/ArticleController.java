@@ -29,7 +29,7 @@ public class ArticleController {
     
     @GetMapping(value = "/feature001")
         public String test() {
-            return "feature 001";
+            return "feature 001 a été ajouté";
         }
     
     @GetMapping(value = "/yves")
