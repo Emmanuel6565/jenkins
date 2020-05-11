@@ -26,7 +26,7 @@ public class ArticleController {
         public String name() {
             return "Hello, World";
         }
-    @GetMapping(value = "/")
+    @GetMapping(value = "/feature")
         public String feature() {
             return "feature 001";
         }
