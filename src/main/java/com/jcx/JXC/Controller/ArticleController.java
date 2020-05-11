@@ -31,6 +31,11 @@ public class ArticleController {
             return "feature 001 a été rajouté";
         }
     
+    @GetMapping(value = "/essaifeature")
+        public String essaifeature() {
+            return "feature 001 a été rajouté par emmanuel";
+        }
+    
     @GetMapping(value = "/article/{id}", produces = "application/json")
     public @ResponseBody ResponseEntity<ArticleDto> getArticleById(@PathVariable String id) {
         ArticleDto article = articleFacade.getArticleById(id);
