@@ -27,7 +27,7 @@ public class ArticleRepository {
         return null;
     }
 
-    public List<Article> findAll() {
+    public List<Article> findAllPage() {
         return this.findAll(0, 5);
     }
 
