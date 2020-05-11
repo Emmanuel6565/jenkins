@@ -17,7 +17,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                git branch: 'dev', credentialsId: 'f6fb2c09-43ba-4a49-b535-4a8cfd2e3757', url: 'https://github.com/Emmanuel6565/jenkins.git'
+                git branch: 'env.BRANCH_NAME', credentialsId: 'f6fb2c09-43ba-4a49-b535-4a8cfd2e3757', url: 'https://github.com/Emmanuel6565/jenkins.git'
             }
         }
         
