@@ -24,7 +24,11 @@ public class ArticleController {
     }
     @GetMapping(value = "/")
         public String name() {
-            return "Hello, World J'ai rajouté emmanuel et une feature";
+            return "Hello, World";
+        }
+    @GetMapping(value = "/")
+        public String feature() {
+            return "feature 001";
         }
     
     @GetMapping(value = "/article/{id}", produces = "application/json")
