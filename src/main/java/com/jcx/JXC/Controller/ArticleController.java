@@ -27,6 +27,11 @@ public class ArticleController {
             return "Hello, World J'ai rajouté emmanuel";
         }
     
+    @GetMapping(value = "/feature001")
+        public String test() {
+            return "feature 001";
+        }
+    
     @GetMapping(value = "/yves")
         public String test() {
             return "haaaaaa ok salut yves, nouvelle feature pour la chaine, pour docker";
