@@ -73,7 +73,7 @@ pipeline {
        
         stage('Build && push Docker Image to Nexus') {
             steps {
-                sh "./mvnw docker:build -DpushImageTag=latest -Dmaven.test.skip=true"
+                sh "./mvnw docker:build -DpushImage -DpushImageTag=latest -Dmaven.test.skip=true"
             }
         }
         
