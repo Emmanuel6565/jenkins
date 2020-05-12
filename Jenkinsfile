@@ -1,4 +1,4 @@
-String cront_string = "H(0-29)/15"
+String cront_string = 'H(0-29)/15'
 
 properties ([
     pipelineTriggers([pollSCM(cront_string)])
