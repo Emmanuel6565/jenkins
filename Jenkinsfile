@@ -1,12 +1,8 @@
-String cront_string = 'H(0-29)/15'
-
-properties ([
-    pipelineTriggers([pollSCM(cront_string)])
-])
-
 pipeline {
     agent any
-   
+    triggers {
+        pollSCM('H(0-29)/15')
+    }
     stages {
         
         stage('Compile Project') {
