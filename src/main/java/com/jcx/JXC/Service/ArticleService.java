@@ -18,7 +18,7 @@ public class ArticleService {
     }
     
     /**
-        fonction in not implement
+     Function not implement yet
      */
     public void getArticleByTitle(String title) {
 
