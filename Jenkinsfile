@@ -27,7 +27,7 @@ pipeline {
                         step( [ $class: 'JacocoPublisher' ] )
                     }
                     post {
-                        succes {
+                        success {
                             
                         }
                         failure {
@@ -41,7 +41,7 @@ pipeline {
                         sh "./mvnw org.pitest:pitest-maven:mutationCoverage"
                     }
                     post {
-                        succes {
+                        success {
                             //send notification
                         }
                         failure {
