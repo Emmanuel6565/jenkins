@@ -28,10 +28,10 @@ pipeline {
                     }
                     post {
                         success {
-                            
+                            echo "SUCCESS"
                         }
                         failure {
-                            
+                            echo "FAILED"
                         }
                     }
                 }
@@ -42,9 +42,11 @@ pipeline {
                     }
                     post {
                         success {
+                            echo "SUCCESS"
                             //send notification
                         }
                         failure {
+                            echo "FAILED"
                            //send notification
                         }
                     }
