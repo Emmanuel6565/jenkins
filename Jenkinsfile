@@ -82,6 +82,13 @@ pipeline {
             }
         }
         
+        stage('Anchor tests vulnerabities'){
+            steps {
+                sh "echo "localhost:8083/app-java:latest ${WORKSPACE}/Dockerfile" > anchore_images"
+                anchore name: 'anchore_images'
+            }
+        }
+        
         stage('Deploy for development') {
             when {
                 anyOf {
