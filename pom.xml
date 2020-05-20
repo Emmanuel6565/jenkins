@@ -152,8 +152,8 @@
                 <version>1.2.0</version>
                 <configuration>
                     <dockerDirectory>${project.basedir}</dockerDirectory>
-                    <imageName>localhost:8083/app-java</imageName>
-                    <serverId>localhost:8083</serverId>
+                    <imageName>10.128.0.5:8083/app-java</imageName>
+                    <serverId>10.128.0.5:8083</serverId>
                     <resources>
                        <resource>
                          <targetPath>/</targetPath>
