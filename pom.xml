@@ -145,7 +145,7 @@
                 </executions>
             </plugin>
             
-            <!-- Docker maven plugin -->
+            <!-- Docker maven plugin to build docker image -->
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
