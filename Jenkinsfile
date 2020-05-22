@@ -6,14 +6,16 @@ properties ([
 
 pipeline {
     agent any
-   
+    tools {
+        maven 'maven'
+    }
     stages {
         
         stage('Compile Project') {
             steps {
                 checkout scm
                 echo "-=- compiling project -=-"
-                sh "./mvnw clean compile"
+                sh "mvn clean compile"
             }
         }
         
@@ -22,7 +24,7 @@ pipeline {
                 stage('Unit tests') {
                     steps {
                         echo "-=- execute unit tests -=-"
-                        sh "./mvnw test"
+                        sh "mvn test"
                         junit 'target/surefire-reports/*.xml'
                         step( [ $class: 'JacocoPublisher' ] )
                     }
@@ -38,7 +40,7 @@ pipeline {
                 stage('Mutation tests') {
                     steps {
                         echo "-=- execute mutation tests -=-"
-                        sh "./mvnw org.pitest:pitest-maven:mutationCoverage"
+                        sh "mvn org.pitest:pitest-maven:mutationCoverage"
                     }
                     post {
                         success {
@@ -65,7 +67,7 @@ pipeline {
             }
             steps {
                 echo "-=- packaging project -=-"
-                sh "./mvnw package -DskipTests"
+                sh "mvn package -DskipTests"
                 archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
             }
         }
@@ -78,7 +80,7 @@ pipeline {
                 }
             }
             steps {
-                sh "./mvnw docker:build -DpushImage -DpushImageTag=latest -Dmaven.test.skip=true"
+                sh "mvn docker:build -DpushImage -DpushImageTag=latest -Dmaven.test.skip=true"
             }
         }
         
