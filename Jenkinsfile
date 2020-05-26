@@ -81,7 +81,7 @@ pipeline {
             }
             steps {
                 sh "mvn docker:build"
-                sh "docker push localhost:8083/app-java:latest"
+                sh "sudo docker push localhost:8083/app-java:latest"
             }
         }
         
