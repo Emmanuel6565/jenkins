@@ -80,13 +80,14 @@ pipeline {
                 }
             }
             steps {
-                sh "mvn docker:build -DpushImage -DpushImageTag=latest -Dmaven.test.skip=true"
+                sh "mvn docker:build"
+                sh "docker push 10.128.0.5:8083/app-java:latest"
             }
         }
         
         stage('Anchor tests vulnerabities'){
             steps {
-                sh 'echo "localhost:8083/app-java:latest ${WORKSPACE}/Dockerfile" > anchore_images'
+                sh 'echo "10.128.0.5:8083/app-java:latest ${WORKSPACE}/Dockerfile" > anchore_images'
                 anchore name: 'anchore_images'
             }
         }
