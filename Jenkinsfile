@@ -80,8 +80,7 @@ pipeline {
                 }
             }
             steps {
-                sh "mvn docker:build"
-                sh "sudo docker push localhost:8083/app-java:latest"
+                sh "mvn docker:build -DpushImage -DpushImageTag=latest -Dmaven.test.skip=true"
             }
         }
         
